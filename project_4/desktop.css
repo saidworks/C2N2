@@ -1,22 +1,26 @@
-.grid-container{
+.grid-container {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
     grid-template-areas: "header header header header" "one one one one " "two two two two " "three three three three" " footer footer footer footer";
-    
 }
-.header{
+
+.header {
     grid-area: header;
-
 }
-.one{
+
+.one {
     grid-area: one;
-
+    background-image: url("/images/illustration-1.svg");
 }
-.two{
+
+.two {
     grid-area: two;
 }
-.three{
-    grid-area: three;
 
+.three {
+    grid-area: three;
 }
-.footer{
+
+.footer {
     grid-area: footer;
 }
