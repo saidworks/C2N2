@@ -1,0 +1,22 @@
+.grid-container{
+    grid-template-areas: "header header header header" "one one one one " "two two two two " "three three three three" " footer footer footer footer";
+    
+}
+.header{
+    grid-area: header;
+
+}
+.one{
+    grid-area: one;
+
+}
+.two{
+    grid-area: two;
+}
+.three{
+    grid-area: three;
+
+}
+.footer{
+    grid-area: footer;
+}
