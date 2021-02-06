@@ -82,6 +82,16 @@
     max-width: 100%;
 }
 
+.two .two-text p #two-link {
+    color: hsl(170, 45%, 43%);
+}
+
+.two .img-two img {
+    margin: 0% 0% 0% 20%;
+    width: 60%;
+    height: auto;
+}
+
 .two #rating {
     padding: 4%;
     max-width: 80%;
@@ -91,9 +101,24 @@
     border-radius: 2%;
 }
 
-.two .img-two img {
-    margin: 0% 0% 0% 20%;
-    width: 60%;
+.two #rating #reference {
+    display: flex;
+    align-items: center;
+}
+
+.two #rating #reference ul {
+    list-style: none;
+    margin-left: -5%;
+    font-size: 0.8em;
+}
+
+.two #rating #reference ul #name {
+    font-weight: bold;
+}
+
+.two #rating #testimonial {
+    border-radius: 50%;
+    width: 20%;
     height: auto;
 }
 
@@ -111,7 +136,7 @@
 .three #email {
     width: 100%;
     padding: 2%;
-    margin-left: -14%;
+    margin: 1%;
 }
 
 .three #submit {
@@ -137,10 +162,7 @@
     max-width: 100%;
 }
 
-.footer #one .logo-footer path {
-    fill: currentColor;
-    color: blue;
-}
+#logo-footer {}
 
 .footer ul {
     margin-left: -40%;
