@@ -1,22 +1,31 @@
 /* For mobile phones: */
 
-@media (max-width:375px) {
+@media (max-width:500px) {
+    .grid-container {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        grid-template-areas: "header header header header" "one one one one " "two two two two " "three three three three" " footer footer footer footer";
+        justify-content: center;
+        align-items: center;
+        max-width: 100%;
+        height: auto;
+    }
     .header {
-        display: inline-flex;
+        display: flex;
         justify-content: space-between;
         align-items: center;
         grid-area: header;
-        margin: 2%;
-        max-width: 90%;
+        margin: 0%;
+        max-width: 100%;
     }
     .header ul {
         margin-left: -40%;
-        flex-direction: column;
+        display: flex;
+        justify-content: space-between;
     }
     .header ul li {
         padding: 5%;
         list-style: none;
-        flex-direction: column;
     }
     .one {
         justify-content: space-evenly;
@@ -25,9 +34,11 @@
         grid-area: one;
         margin: 2%;
         padding: 2%;
+        flex-direction: column-reverse;
+        align-items: center;
     }
     .one #img-one {
-        margin-left: 30%;
+        margin-right: 300px;
         width: 70%;
         height: auto;
         overflow: auto;
@@ -37,9 +48,11 @@
         font-size: 1.5rem;
     }
     .one .email #email {
+        display: flex;
         width: 50%;
         padding: 1%;
-        flex-direction: column;
+        margin-bottom: 10px;
+        margin-top: 10px;
     }
     .one .email #submit {
         background-color: #3065f8;
@@ -47,9 +60,8 @@
         border: 1% solid #3065f8;
         width: 40%;
         height: auto;
-        padding: 1%;
+        text-align: center;
         flex-direction: column;
-        flex-wrap: nowrap;
     }
     .two {
         margin: 0% 2%;
@@ -62,7 +74,7 @@
         justify-content: space-between;
         align-items: center;
         max-width: 100%;
-        flex-direction: column;
+        flex-direction: column-reverse;
         flex-wrap: nowrap;
     }
     .two .two-text {
@@ -138,17 +150,13 @@
         max-width: 100%;
     }
     .footer ul {
-        margin-left: -40%;
-        flex-direction: column;
-        flex-direction: column;
-        justify-content: space-between;
+        padding: 5px;
     }
     .footer ul li {
-        padding: 5%;
+        padding: 5px;
         list-style: none;
     }
     .footer .social {
-        flex-direction: column;
         justify-content: space-evenly;
     }
     .footer .social img {
