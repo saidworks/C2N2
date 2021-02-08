@@ -2,12 +2,9 @@
 
 @media (max-width:500px) {
     .grid-container {
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(5, 1fr);
-        grid-template-areas: "header header header header" "one one one one " "two two two two " "three three three three" " footer footer footer footer";
-        justify-content: center;
-        align-items: center;
-        max-width: 100%;
+        margin-left: 4vw;
+        display: block;
+        max-width: 100vw;
         height: auto;
     }
     .header {
@@ -26,6 +23,7 @@
     .header ul li {
         padding: 5%;
         list-style: none;
+        font-size: 0.7em;
     }
     .one {
         justify-content: space-evenly;
@@ -142,12 +140,12 @@
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
-        grid-area: header;
         background-color: #070439;
         color: white;
         margin: 0%;
         padding: 2%;
-        max-width: 100%;
+        max-width: 100vw;
+        height: auto;
     }
     .footer ul {
         padding: 5px;

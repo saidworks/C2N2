@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        .container {
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 0.75fr 0.25fr;
+            grid-template-areas: "one" "footer";
+            grid-gap: 50px;
+            background-image: url(./images/bg-header-desktop.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        form {
+            grid-area: one;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-areas: "one two";
+            width: 100%;
+        }
+        
+        #form .column-one {
+            margin-left: 4%;
+            grid-area: one;
+            margin-top: 2%;
+            border-right: 1px solid gray;
+        }
+        
+        #form .comment #submit {
+            width: 100%;
+            height: 10%;
+            background-color: #5dccbb;
+            font-weight: bold;
+            font-size: 1em;
+            color: white;
+            border-radius: 0% 0% 20px 0%;
+        }
+        
+        #form .comment {
+            grid-area: two;
+        }
+        
+        .email {
+            margin-top: 10%;
+        }
+        
+        .phone {
+            margin-top: 10%;
+        }
+        
+        .item15 {
+            grid-area: footer;
+        }
+        
+        input[type="text"] {
+            background: transparent;
+            border: none;
+        }
+        
+        input[type="email"] {
+            background: transparent;
+            border: none;
+        }
+        
+        input[type="tel"] {
+            background: transparent;
+            border: none;
+        }
+        
+        textarea {
+            background: transparent;
+            border: none;
+        }
+        
+        .line {
+            width: 80%;
+            height: 10px;
+            border-bottom: 1px solid gray;
+        }
+        
+        .vl {
+            border-left: 6px solid green;
+            height: 500px;
+        }
+        
+        @media (max-width:768)
+    </style>
+    <title>Projet 2</title>
+</head>
+
+<body>
+
+    <div class="container">
+
+
+        <form id="form" action="" method="GET">
+            <div class="column-one">
+                <h1>Contact US</h1>
+                <div class="name">
+
+                    <label id="name-label" for="name">Name</label><br>
+                    <input type="text" name="name-label" id="name" placeholder="Enter your name" required>
+                    <div class="line"></div>
+                </div>
+                <div class="email">
+                    <label id="email-label" for="email">Email</label><br>
+                    <input type="email" name="email-label" id="email" placeholder="Enter your email" required>
+                    <div class="line"></div>
+                </div>
+                <div class="phone">
+                    <label id="number-label" for="number">Phone</label><br>
+                    <input id="number" name="number-label" type="tel" placeholder="Phone number" min="18" max="120">
+                    <div class="line"></div>
+                </div>
+            </div>
+
+            <div class="comment">
+
+                <p>Your message </p>
+                <textarea name="comment" id="text-area" cols="60" rows="30">Enter your message here
+                    </textarea>
+                <input id="submit" type="submit" value="Submit">
+            </div>
+
+        </form>
+
+        <div class="item15">
+            <img class="c_logo" src="./images/logo.svg" alt="logo">
+            <p class="para_1">FAQs</p>
+            <p class="para_2">Contact Us</p>
+            <p class="para_3">Privacy Policy</p>
+            <p class="para_4">Press kit</p>
+            <p class="para_5">Install Guide</p>
+            <div class="icons">
+                <img class="fb" src="./images/icon-facebook.svg" alt="facebook">
+                <img class="tw" src="./images/icon-twitter.svg" alt="twitter">
+                <img class="insta" src="./images/icon-instagram.svg" alt="instagram">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

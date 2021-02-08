@@ -2,6 +2,7 @@
     @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
     .grid-container {
+        display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(5, 1fr);
         grid-template-areas: "header header header header" "one one one one " "two two two two " "three three three three" " footer footer footer footer";
@@ -141,7 +142,6 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        grid-area: header;
         background-color: #070439;
         color: white;
         margin: 0%;
