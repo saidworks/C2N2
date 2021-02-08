@@ -1,105 +1,122 @@
-body{
+body {
     width: 100%;
     margin-top: 0;
 }
-.container{
+
+.container {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-gap: 50px;
     background-image: url(./images/bg-header-desktop.png);
     background-repeat: no-repeat;
-
 }
-.logo_top{
+
+.logo_top {
     padding-top: 100px;
 }
-.container > *{
-    font-family: 'Bai Jamjuree', sans-serif;
 
+.container>* {
+    font-family: 'Bai Jamjuree', sans-serif;
 }
-.item1{
+
+.item1 {
     grid-column: 2/5;
     text-align: center;
-} 
+}
 
-.item_2l{
+.item_2l {
     grid-column: 1/2;
     text-align: center;
     background-color: #5dccbb;
     border-radius: 30px;
     box-shadow: 0px 10px 10px rgb(210, 248, 210);
 }
-.item_2r{
+
+.item_2r {
     grid-column: 2/3;
     text-align: center;
     background-color: #8896ff;
     border-radius: 30px;
     box-shadow: 0px 10px 10px rgb(210, 211, 248);
 }
-.item_2l_2r{
+
+.item_2l_2r {
     grid-column: 2/5;
     text-align: center;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
 }
-.item3{
+
+.item3 {
     grid-column: 2/5;
     text-align: center;
 }
-.computer{
+
+.computer {
     grid-column: 1/3;
     text-align: center;
 }
-.computer_1{
+
+.computer_1 {
     block-size: 300px;
 }
-.item4{
+
+.item4 {
     grid-column: 3/5;
     text-align: center;
 }
-.item5{
+
+.item5 {
     grid-column: 2/5;
     text-align: center;
 }
-.item6{
+
+.item6 {
     grid-column: 2/5;
     text-align: center;
 }
-.devices{
+
+.devices {
     block-size: 300px;
     align-self: center;
 }
-.item7{
+
+.item7 {
     grid-column: 2/5;
     text-align: center;
 }
-.item8{
+
+.item8 {
     grid-column: 2/3;
     text-align: center;
-
 }
-.item9{
+
+.item9 {
     grid-column: 3/4;
     text-align: center;
 }
-.item10{
+
+.item10 {
     grid-column: 4/5;
     text-align: center;
 }
-.item11{
+
+.item11 {
     grid-column: 1/6;
     text-align: center;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     justify-items: center;
 }
-.item12{
+
+.item12 {
     grid-column: 2/5;
     text-align: center;
 }
-.item_t_f{
+
+.item_t_f {
     grid-column: 2/5;
     text-align: center;
     display: grid;
@@ -107,21 +124,23 @@ body{
     gap: 10px;
 }
 
-.item13{
+.item13 {
     grid-column: 1/2;
-    text-align:center ;
+    text-align: center;
     background-color: #5dccbb;
     border-radius: 30px;
     box-shadow: 0px 10px 10px rgb(210, 248, 210);
 }
-.item14{
+
+.item14 {
     grid-column: 2/3;
     text-align: center;
     background-color: #8896ff;
     border-radius: 30px;
     box-shadow: 0px 10px 10px rgb(210, 211, 248);
 }
-.item15{
+
+.item15 {
     grid-column: 1/6;
     text-align: center;
     display: grid;
@@ -130,79 +149,86 @@ body{
     grid-gap: 10px;
     background-color: #f5f6f8;
 }
-.para_1{
+
+.para_1 {
     grid-column: 2/3;
     align-self: end;
 }
-.para_2{
+
+.para_2 {
     grid-column: 2/3;
     grid-row: 2/3;
 }
-.para_3{
+
+.para_3 {
     grid-column: 3/4;
     align-self: end;
 }
-.para_4{
+
+.para_4 {
     grid-column: 3/4;
     grid-row: 2/3;
 }
-.para_5{
+
+.para_5 {
     grid-column: 4/5;
     align-self: end;
 }
-.icons{
+
+.icons {
     grid-column: 5/6;
     align-self: end;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
-.c_logo{
+
+.c_logo {
     grid-row: 1/3;
     padding-top: 40px;
     padding-left: 50px;
 }
 
-@media (max-width: 374px){
-    .container{
+@media (max-width: 374px) {
+    .container {
         display: flex;
         flex-direction: column;
         background-image: url(./images/bg-header-mobile.png);
         margin: 0 0 0 10%;
     }
-    .item_2l_2r{
+    .item_2l_2r {
         display: flex;
         flex-direction: column;
     }
-    .item11{
+    .item11 {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
     }
-    .google{
+    .google {
         width: 200px;
         padding-bottom: 70px;
         align-self: center;
     }
-    .ibm{
+    .ibm {
         width: 200px;
         padding-bottom: 70px;
         align-self: center;
     }
-    .microsoft{
+    .microsoft {
         width: 200px;
         padding-bottom: 70px;
         align-self: center;
     }
-    .logo{
+    .logo {
         width: 200px;
         padding-bottom: 70px;
         align-self: center;
     }
-    .vector{
+    .vector {
         width: 200px;
         align-self: center;
     }
-    .item_t_f{
+    .item_t_f {
         display: flex;
         flex-direction: column;
     }
@@ -216,39 +242,39 @@ body{
     .c_logo{
         padding: 5%;
     }*/
-    .item15{
+    .item15 {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(6, 1fr);
 
         grid-gap: 20px;
     }
-    .para_1{
+    .para_1 {
         grid-column: 1/2;
         grid-row: 2/3;
         align-self: center;
     }
-    .para_2{
+    .para_2 {
         grid-column: 1/2;
         grid-row: 3/4;
         align-self: center;
     }
-    .para_3{
+    .para_3 {
         grid-column: 1/2;
         grid-row: 4/5;
         align-self: center;
     }
-    .para_4{
+    .para_4 {
         grid-column: 1/2;
         grid-row: 5/6;
         align-self: center;
     }
-    .para_5{
+    .para_5 {
         grid-column: 1/2;
         grid-row: 6/7;
         align-self: center;
     }
-    .icons{
+    .icons {
         grid-column: 1/2;
         grid-row: 7/8;
         justify-content: center;
@@ -256,22 +282,23 @@ body{
         grid-template-columns: repeat(3, 1fr);
         margin-left: 65px;
     }
-    .c_logo{
+    .c_logo {
         grid-column: 1/2;
         grid-row: 1/2;
         align-self: center;
         width: 100px;
         margin-left: 90px;
     }
-    .item4{
+    .item4 {
         margin-right: 100px;
     }
 }
+
 @media (max-width: 768px) {
-     .item4{
-         margin-left: 150px;
-     }
-     .item11{
-         grid-column-gap: 20px;
-     }
-    }     
+    .item4 {
+        margin-left: 150px;
+    }
+    .item11 {
+        grid-column-gap: 20px;
+    }
+}
