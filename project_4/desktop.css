@@ -1,8 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
-* {
-    font-family: 'Raleway', sans-serif;
-}
-
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 .grid-container {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(5, 1fr);
@@ -11,6 +8,7 @@
     align-items: center;
     max-width: 100%;
     height: auto;
+    font-family: 'Raleway', sans-serif;
 }
 
 .header {
@@ -20,6 +18,7 @@
     grid-area: header;
     margin: 2%;
     max-width: 90%;
+    font-family: font-family: 'Open Sans', sans-serif;
 }
 
 .header ul {

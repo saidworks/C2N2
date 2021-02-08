@@ -1,0 +1,157 @@
+/* For mobile phones: */
+
+@media (max-width:375px) {
+    .header {
+        display: inline-flex;
+        justify-content: space-between;
+        align-items: center;
+        grid-area: header;
+        margin: 2%;
+        max-width: 90%;
+    }
+    .header ul {
+        margin-left: -40%;
+        flex-direction: column;
+    }
+    .header ul li {
+        padding: 5%;
+        list-style: none;
+        flex-direction: column;
+    }
+    .one {
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: nowrap;
+        grid-area: one;
+        margin: 2%;
+        padding: 2%;
+    }
+    .one #img-one {
+        margin-left: 30%;
+        width: 70%;
+        height: auto;
+        overflow: auto;
+        flex-direction: column;
+    }
+    .one h2 {
+        font-size: 1.5rem;
+    }
+    .one .email #email {
+        width: 50%;
+        padding: 1%;
+        flex-direction: column;
+    }
+    .one .email #submit {
+        background-color: #3065f8;
+        color: white;
+        border: 1% solid #3065f8;
+        width: 40%;
+        height: auto;
+        padding: 1%;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    .two {
+        margin: 0% 2%;
+        padding: 5% 2%;
+        grid-area: two;
+        background-image: url("images/bg-curve-desktop.svg");
+        background-size: 1000vw 1000vh;
+        background-position-x: 50%;
+        background-repeat: no-repeat;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 100%;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    .two .two-text {
+        padding: 8% 0%;
+    }
+    .two .two-text p #two-link {
+        color: hsl(170, 45%, 43%);
+    }
+    .two .img-two img {
+        margin: 0% 0% 0% 0%;
+        width: 50vw;
+        height: auto;
+    }
+    .two #rating {
+        padding: 4%;
+        max-width: 80%;
+        text-align: left;
+        border: 1px white solid;
+        box-shadow: 5px 5px 5px 5px #888888;
+        border-radius: 2%;
+    }
+    .two #rating #reference {
+        flex-direction: column;
+        align-items: center;
+    }
+    .two #rating #reference ul {
+        list-style: none;
+        margin-left: -5%;
+        font-size: 0.8em;
+    }
+    .two #rating #reference ul #name {
+        font-weight: bold;
+    }
+    .two #rating #testimonial {
+        border-radius: 50%;
+        width: 20%;
+        height: auto;
+    }
+    .three {
+        margin: 0%;
+        padding: 2%;
+        grid-area: three;
+        background-color: #585989;
+        color: white;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .three #email {
+        width: 90%;
+        padding: 2%;
+        margin: 1%;
+    }
+    .three #submit {
+        background-color: #3065f8;
+        color: white;
+        border: 1% solid #3065f8;
+        width: 80%;
+        height: auto;
+        padding: 2%;
+        margin: 1%;
+    }
+    .footer {
+        grid-area: footer;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        grid-area: header;
+        background-color: #070439;
+        color: white;
+        margin: 0%;
+        padding: 2%;
+        max-width: 100%;
+    }
+    .footer ul {
+        margin-left: -40%;
+        flex-direction: column;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .footer ul li {
+        padding: 5%;
+        list-style: none;
+    }
+    .footer .social {
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .footer .social img {
+        padding: 10%;
+    }
+}
