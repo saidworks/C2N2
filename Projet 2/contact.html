@@ -92,7 +92,21 @@
             height: 500px;
         }
         
-        @media (max-width:768)
+        @media (max-width:768) {
+            #form {
+                display: grid;
+                grid-template-columns: 1fr;
+            }
+            .item15 {
+                grid-column: 1/2;
+                text-align: center;
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+                grid-template-rows: repeat(1, 1fr);
+                grid-gap: 10px;
+                background-color: #f5f6f8;
+            }
+        }
     </style>
     <title>Projet 2</title>
 </head>

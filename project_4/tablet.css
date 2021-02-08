@@ -9,8 +9,9 @@
         justify-content: center;
         align-items: center;
         max-width: 100%;
-        height: auto;
+        height: 100vh;
         font-family: 'Raleway', sans-serif;
+        grid
     }
     .header {
         display: flex;
